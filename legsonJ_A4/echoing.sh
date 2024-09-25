@@ -32,5 +32,5 @@ echo "Variable 1 is $mathvar1. Variable 2 is $mathvar2. Using $mathvar3 for Vari
 # Activity 4: More math. Working with floating-point solution
 
 floating=$(echo "scale=4; 4.5/1.7" | bc)
-echo "Our floating variable is $floating
+echo "Our floating variable is $floating"
 
