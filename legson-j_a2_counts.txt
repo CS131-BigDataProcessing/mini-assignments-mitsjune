@@ -1,4 +1,0 @@
-       6      78
-
-first number, 6, is the line count for "Good luck, babe "
-second number, 78, is the word count for "Good luck, babe "
