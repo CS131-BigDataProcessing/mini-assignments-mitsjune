@@ -1,0 +1,16 @@
+  744  sort -t, -k AB_NYC_2019.csv | uniq > uniqq.csv
+  745  sort -t, -k AB_NYC_2019.csv | uniq > unique10.csv
+  746  sort -t, -k0 AB_NYC_2019.csv | uniq > unigsdf.csv
+  747  killall -v -9 Notion
+  748  clear
+  749  cd
+  750  pwd
+  751  cd mini-assignments-mitsjune
+  752  ls
+  753  awk -F, '{print $4}' airline_stats.csv
+  754  awk -F, '{print $4}' airline_stats.csv | sort -u
+  755  awk -F, '{$1 > 10 {print $4}' airline_stats.csv | sort
+  756  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort
+  757  awk -F, '{print $4}' airline_stats.csv | sort -u
+  758  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort -u
+  759  awk -F, -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort -u

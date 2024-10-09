@@ -1,0 +1,40 @@
+1. What are all the airlines? What awk command did you use to get this information?
+
+	airlines: 
+		"Alaska"
+		"American"
+		"Delta"
+		"Jet Blue"
+		"Southwest"
+		"United"
+		"airline"
+
+	command: awk -F, '{print $4}' airline_stats.csv | sort -u
+
+
+2. Which airlines have: (Include your awk command for part a and b)
+  a. Has a carrier delay greater than 10 and print airline names (alphabetically. Hint* pipe input into sort)
+
+	airlines: 
+		"Alaska"
+		"American"
+		"Delta"
+		"Jet Blue"
+		"Southwest"
+		"United"
+
+	command: awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort -u
+
+
+  b. Has a carrier delay greater than a certain threshold of 15? Use -v to pass in a value that is set to 'Threshold = 15'  
+
+	airlines: 
+		"Alaska"
+		"American"
+		"Delta"
+		"Jet Blue"
+		"Southwest"
+		"United"
+
+	command: awk -F, -v Threshold=15 '$1 > Threshold {print $4}' airline_stats.csv | sort -u
+	
