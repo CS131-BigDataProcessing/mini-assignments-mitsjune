@@ -1,0 +1,13 @@
+a. What other types of tasks (provide 2) could benefit from automation using cron or at? (4 pts)
+
+  1. automated email reminders
+  2. automated syncing of files to cloud storage
+
+b. What potential risks are there with poorly managed automated tasks, and how can you avoid them (e.g., ensuring backups work correctly)? (2 pts)
+
+  - Tasks running too often caused by incorrectly scheduled task times.
+	Solution: 
+	Double check and ensure their schedules work as expected.
+  - Accidentally deleting important files.
+	Solution:
+	Use absolute paths for target directories and log deleted files.
